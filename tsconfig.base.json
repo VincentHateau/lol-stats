@@ -1,0 +1,13 @@
+{
+  "include": [
+    "packages/*/src"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@lol-stats/*": [
+        "packages/*/src"
+      ]
+    }
+  }
+}

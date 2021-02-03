@@ -1,11 +1,16 @@
 {
   "name": "lol-stats",
+  "private": "true",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "tsc && node dist/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "lerna run build --scope=@lol-stats/{back,front}",
+    "start:back": "lerna run start --scope=@lol-stats/back"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.22.1"
   },
   "repository": {
     "type": "git",
@@ -16,13 +21,5 @@
   "bugs": {
     "url": "https://github.com/VincentHateau/lol-stats/issues"
   },
-  "homepage": "https://github.com/VincentHateau/lol-stats#readme",
-  "devDependencies": {
-    "@types/express": "^4.16.1",
-    "tslint": "^5.12.1",
-    "typescript": "^3.3.3"
-  },
-  "dependencies": {
-    "express": "^4.16.4"
-  }
+  "homepage": "https://github.com/VincentHateau/lol-stats#readme"
 }
