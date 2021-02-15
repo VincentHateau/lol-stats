@@ -6,7 +6,7 @@
             "esnext"
         ],
         "jsx": "react",
-        "outDir": "dist",
+        "outDir": "dist"
     },
     "include": [
         "src"

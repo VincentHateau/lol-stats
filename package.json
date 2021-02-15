@@ -1,6 +1,6 @@
 {
   "name": "lol-stats",
-  "private": "true",
+  "private": true,
   "version": "1.0.0",
   "scripts": {
     "build": "lerna run build --scope=@lol-stats/{back,front}",
